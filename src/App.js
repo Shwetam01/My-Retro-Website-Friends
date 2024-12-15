@@ -1,8 +1,7 @@
-// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './Home';         // Import the Home component
-import Characters from './Characters'; // Import the Characters component
+import Home from './Home';
+import Characters from './Characters';
 import Downloads from './Downloads';
 import Games from './Games';
 import Crew from './Crew';
@@ -11,9 +10,9 @@ import Review from './Review';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/My-Retro-Website-Friends">
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/downloads" element={<Downloads />} />
         <Route path="/characters" element={<Characters />} />
         <Route path="/games" element={<Games />} />
