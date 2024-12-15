@@ -37,7 +37,7 @@ jobs:
       
       # Install dependencies
       - name: Install dependencies
-        run: npm ci
+        run: npm install
       
       # Build the project
       - name: Build
@@ -61,4 +61,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
