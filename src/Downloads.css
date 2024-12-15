@@ -1,0 +1,62 @@
+body {
+    background: url('/src/assets/bg.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .downloads-container {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    max-width: 1200px;
+    margin: 30px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    border: 4px dotted #FF5733; 
+  }
+  
+  .retro-title {
+    font-size: 2.5rem;
+    color: #ff9900;
+    text-shadow: 2px 2px #000;
+    margin-bottom: 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+    color: #ff9900; 
+    font-size: 40px; 
+    text-shadow: 4px 4px 0px #002fff, 6px 6px 0px #32CD32, 8px 8px 0px #1E90FF; 
+    text-transform: uppercase; 
+  }
+  
+  .downloads-section {
+    margin: 30px 0;
+  }
+  
+  .downloads-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+    text-decoration: underline;
+  }
+  
+  .downloads-grid {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .retro-image {
+    border: 3px solid #ff9900;
+    border-radius: 10px;
+    box-shadow: 4px 4px #333;
+    width: 200px;
+    height: auto;
+    transition: transform 0.2s;
+  }
+  
+  .retro-image:hover {
+    transform: scale(1.1);
+  }
+  

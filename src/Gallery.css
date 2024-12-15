@@ -1,0 +1,63 @@
+.gallery-container {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+    color: #333;
+    text-align: center;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.7); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    border: 4px dotted #3633ff; 
+  }
+  
+  .retro-title {
+    font-size: 2rem;
+    color: #f2ff00;
+    text-shadow: 2px 2px #000;
+    margin-bottom: 30px;
+    animation: neon-glow 2s infinite alternate;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+  }
+  
+  .gallery-image {
+    width: 100%;
+    height: auto;
+    border: 5px solid #ff8000;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    transform: rotate(0deg);
+    animation: funky-shake 1s infinite alternate;
+  }
+  
+  .gallery-image:nth-child(odd) {
+    transform: rotate(-3deg);
+  }
+  
+  .gallery-image:nth-child(even) {
+    transform: rotate(3deg);
+  }
+  
+  .gallery-image:hover {
+    transform: scale(1.1) rotate(5deg);
+  }
+  
+  /* Funky animations for retro vibes */
+  @keyframes neon-glow {
+    0% { text-shadow: 0 0 5px #ff9900, 0 0 10px #ff9900, 0 0 15px #ff9900; }
+    50% { text-shadow: 0 0 20px #ffcc00, 0 0 30px #ffcc00, 0 0 40px #ffcc00; }
+    100% { text-shadow: 0 0 5px #ff9900, 0 0 10px #ff9900, 0 0 15px #ff9900; }
+  }
+  
+  @keyframes funky-shake {
+    0% { transform: translateX(0) rotate(0deg); }
+    50% { transform: translateX(-10px) rotate(-5deg); }
+    100% { transform: translateX(10px) rotate(5deg); }
+  }
+  
